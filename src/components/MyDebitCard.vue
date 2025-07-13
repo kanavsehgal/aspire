@@ -34,7 +34,7 @@
                 :class="{ 'frozen-card': card.isFrozen }"
               >
                 <div class="row items-center justify-end">
-                  <img :src="card.logo" alt="aspire" class="logo-img" />
+                  <img :src="getIconLink('../assets/aspireLogo1.svg')" alt="aspire" class="logo-img" />
                 </div>
                 <div class="card-holder row justify-start">{{ card.holder }}</div>
                 <div class="card-number">
