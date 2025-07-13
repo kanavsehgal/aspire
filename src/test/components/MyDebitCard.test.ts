@@ -58,19 +58,23 @@ describe('MyDebitCard.vue - TypeScript Tests', () => {
     currencyType: 'S$',
     transactions: [
       {
+        id: '1',
         title: 'Test Transaction',
         date: '2024-01-01',
-        amount: 150,
+        amount: '150',
         icon: '../assets/file-storage.svg',
+        background: '#009DFF1A',
         iconColor: '#009DFF',
         noteKey: 'dashboard.transactions.fileStorage',
         type: TransactionType.CHARGED,
       },
       {
+        id: '2',
         title: 'Refund Transaction',
         date: '2024-01-02',
-        amount: 50,
+        amount: '50',
         icon: '../assets/flights.svg',
+        background: '#00D6B51A',
         iconColor: '#00D6B5',
         noteKey: 'dashboard.transactions.flights',
         type: TransactionType.REFUND,
@@ -140,7 +144,7 @@ describe('MyDebitCard.vue - TypeScript Tests', () => {
       const firstTransaction = wrapper.props('transactions')[0]
       expect(typeof firstTransaction.title).toBe('string')
       expect(typeof firstTransaction.date).toBe('string')
-      expect(typeof firstTransaction.amount).toBe('number')
+      expect(typeof firstTransaction.amount).toBe('string')
       expect(typeof firstTransaction.icon).toBe('string')
       expect(typeof firstTransaction.iconColor).toBe('string')
       expect(typeof firstTransaction.noteKey).toBe('string')
@@ -267,16 +271,18 @@ describe('MyDebitCard.vue - TypeScript Tests', () => {
       const validTransaction: Transaction = {
         title: 'Valid Transaction',
         date: '2024-01-01',
-        amount: 100,
+        amount: '100',
         icon: '../assets/valid-icon.svg',
+        background: '#FFFFFF',
+        type: TransactionType.CHARGED,
         iconColor: '#FF0000',
         noteKey: 'dashboard.transactions.valid',
-        type: TransactionType.CHARGED,
+        id: '1',
       }
 
       expect(typeof validTransaction.title).toBe('string')
       expect(typeof validTransaction.date).toBe('string')
-      expect(typeof validTransaction.amount).toBe('number')
+      expect(typeof validTransaction.amount).toBe('string')
       expect(typeof validTransaction.icon).toBe('string')
       expect(typeof validTransaction.iconColor).toBe('string')
       expect(typeof validTransaction.noteKey).toBe('string')
