@@ -10,4 +10,7 @@ export default createI18n({
   locale: 'en', // Set default locale
   fallbackLocale: 'en', // Fallback locale
   messages,
+  globalInjection: true,
+  missingWarn: false,
+  fallbackWarn: false
 })
