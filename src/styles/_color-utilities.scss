@@ -1,0 +1,110 @@
+// =============================================================================
+// Color Utility Classes
+// =============================================================================
+
+// Background Colors
+.bg-white { background-color: $color-white !important; }
+.bg-white-pure { background-color: $color-white-pure !important; }
+.bg-navy-dark { background-color: $color-navy-dark !important; }
+.bg-navy-light { background-color: $color-navy-light !important; }
+.bg-blue-primary { background-color: $color-blue-primary !important; }
+.bg-blue-light { background-color: $color-blue-light !important; }
+.bg-blue-very-light { background-color: $color-blue-very-light !important; }
+.bg-green-primary { background-color: $color-green-primary !important; }
+.bg-green-light { background-color: $color-green-light !important; }
+.bg-green-very-light { background-color: $color-green-very-light !important; }
+.bg-gray-light { background-color: $color-gray-light !important; }
+.bg-gray { background-color: $color-gray !important; }
+.bg-gray-medium { background-color: $color-gray-medium !important; }
+.bg-cyan { background-color: $color-cyan !important; }
+
+// Text Colors
+.text-white { color: $color-white !important; }
+.text-white-pure { color: $color-white-pure !important; }
+.text-navy-dark { color: $color-navy-dark !important; }
+.text-blue-primary { color: $color-blue-primary !important; }
+.text-green-primary { color: $color-green-primary !important; }
+.text-gray-medium { color: $color-gray-medium !important; }
+.text-gray-dark { color: $color-gray-medium !important; }
+.text-cyan { color: $color-cyan !important; }
+
+// Border Colors
+.border-navy-dark { border-color: $color-navy-dark !important; }
+.border-blue-primary { border-color: $color-blue-primary !important; }
+.border-green-primary { border-color: $color-green-primary !important; }
+.border-gray-light { border-color: $color-gray-light !important; }
+.border-gray-border { border-color: $color-gray-border !important; }
+.border-cyan { border-color: $color-cyan !important; }
+
+// Semantic Background Colors
+.bg-primary { background-color: $color-background-primary !important; }
+.bg-secondary { background-color: $color-background-secondary !important; }
+.bg-tertiary { background-color: $color-background-tertiary !important; }
+
+// Semantic Text Colors
+.text-primary { color: $color-text-primary !important; }
+.text-secondary { color: $color-text-secondary !important; }
+.text-muted { color: $color-text-muted !important; }
+
+// Semantic Border Colors
+.border-primary { border-color: $color-border-primary !important; }
+.border-secondary { border-color: $color-border-secondary !important; }
+
+// Status Colors
+.bg-success { background-color: $color-success !important; }
+.bg-info { background-color: $color-info !important; }
+.bg-warning { background-color: $color-warning !important; }
+.bg-error { background-color: $color-error !important; }
+
+.text-success { color: $color-success !important; }
+.text-info { color: $color-info !important; }
+.text-warning { color: $color-warning !important; }
+.text-error { color: $color-error !important; }
+
+// Hover States
+.hover\:bg-blue-light:hover { background-color: $color-blue-light !important; }
+.hover\:bg-green-light:hover { background-color: $color-green-light !important; }
+.hover\:bg-gray-light:hover { background-color: $color-gray-light !important; }
+
+.hover\:text-blue-primary:hover { color: $color-blue-primary !important; }
+.hover\:text-green-primary:hover { color: $color-green-primary !important; }
+.hover\:text-navy-dark:hover { color: $color-navy-dark !important; }
+
+// Focus States
+.focus\:border-blue-primary:focus { border-color: $color-blue-primary !important; }
+.focus\:border-green-primary:focus { border-color: $color-green-primary !important; }
+.focus\:border-cyan:focus { border-color: $color-cyan !important; }
+
+// Opacity Utilities
+.opacity-2 { opacity: 0.02; }
+.opacity-4 { opacity: 0.04; }
+.opacity-6 { opacity: 0.06; }
+.opacity-8 { opacity: 0.08; }
+.opacity-12 { opacity: 0.12; }
+.opacity-20 { opacity: 0.20; }
+
+// Gradient Utilities
+.gradient-blue {
+  background: linear-gradient(135deg, $color-blue-primary 0%, $color-blue-light 100%);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, $color-green-primary 0%, $color-green-light 100%);
+}
+
+.gradient-navy {
+  background: linear-gradient(135deg, $color-navy-dark 0%, $color-blue-primary 100%);
+}
+
+// Shadow with Brand Colors
+.shadow-blue {
+  box-shadow: 0 4px 6px -1px rgba($color-blue-primary, 0.1);
+}
+
+.shadow-green {
+  box-shadow: 0 4px 6px -1px rgba($color-green-primary, 0.1);
+}
+
+.shadow-navy {
+  box-shadow: 0 4px 6px -1px rgba($color-navy-dark, 0.1);
+} 

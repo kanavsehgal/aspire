@@ -1,0 +1,175 @@
+// =============================================================================
+// SCSS Mixins
+// =============================================================================
+
+// Import variables
+@import 'variables';
+
+// Responsive breakpoints
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Typography mixins
+@mixin heading-1 {
+  font-size: $font-size-xxl;
+  line-height: $line-height-tight;
+  font-weight: $font-weight-bold;
+}
+
+@mixin heading-2 {
+  font-size: $font-size-xl;
+  line-height: $line-height-tight;
+  font-weight: $font-weight-medium;
+}
+
+@mixin body-text {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+}
+
+@mixin small-text {
+  font-size: $font-size-sm;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+}
+
+// Button mixins
+@mixin button-base {
+  border-radius: $border-radius;
+  border: 1px solid $color-border;
+  padding: $spacing-xs $spacing-sm;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all $transition-duration $transition-timing;
+  
+  &:hover {
+    border-color: $color-border-focus;
+  }
+  
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+@mixin button-primary {
+  @include button-base;
+  background-color: $color-primary;
+  color: white;
+  
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+@mixin button-secondary {
+  @include button-base;
+  background-color: $color-button-bg;
+  color: $color-text;
+  
+  &:hover {
+    background-color: rgba(26, 26, 26, 0.8);
+  }
+}
+
+// Card mixins
+@mixin card-base {
+  padding: $spacing-xl;
+  border-radius: $border-radius;
+  background-color: $color-background-dark;
+  box-shadow: $shadow-md;
+}
+
+@mixin card-hover {
+  transition: transform $transition-duration $transition-timing, box-shadow $transition-duration $transition-timing;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Utility mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Animation mixins
+@mixin fade-in($duration: 0.3s) {
+  animation: fadeIn $duration ease-in-out;
+}
+
+@mixin slide-in($direction: 'up', $duration: 0.3s) {
+  animation: slideIn#{$direction} $duration ease-out;
+}
+
+// Keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 

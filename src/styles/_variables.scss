@@ -1,0 +1,120 @@
+// =============================================================================
+// SCSS Variables
+// =============================================================================
+
+// Typography
+$font-family-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 3.2rem;
+
+$line-height-base: 1.5;
+$line-height-tight: 1.1;
+
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Custom Colors (can be overridden by Quasar variables)
+$color-primary: #646cff;
+$color-primary-hover: #535bf2;
+$color-primary-light: #747bff;
+$color-primary-dark: #4f46e5;
+
+$color-text: rgba(255, 255, 255, 0.87);
+$color-text-light: #213547;
+$color-text-muted: rgba(255, 255, 255, 0.6);
+
+$color-background: #242424;
+$color-background-light: #ffffff;
+$color-background-dark: #1a1a1a;
+
+$color-button-bg: #1a1a1a;
+$color-button-bg-light: #f9f9f9;
+
+$color-border: transparent;
+$color-border-focus: #646cff;
+
+// Additional Brand Colors
+$color-white: #FFFFFF;
+$color-navy-dark: #0C365A;
+$color-black-12: #0000001F;
+$color-green-primary: #01D167;
+$color-navy-light: #072A441F;
+$color-black-8: #00000014;
+$color-white-pure: #FCFCFC;
+$color-blue-light: #EDF3FF;
+$color-black-2: #00000005;
+$color-blue-primary: #325BAF;
+$color-blue-very-light: #F5F9FF;
+$color-black-4: #0000000A;
+$color-gray-light: #F5F5F5;
+$color-cyan: #23CEFD;
+$color-green-light: #EDFFF5;
+$color-black-6: #0000000F;
+$color-green-very-light: #DDFFEC;
+$color-gray: #F0F0F0;
+$color-blue-20: #009DFF1A;
+$color-gray-medium: #AAAAAA;
+$color-teal-20: #00D6B51A;
+$color-pink-20: #F251951A;
+$color-gray-border: #E5E5E5;
+
+// Quasar Colors (imported from _quasar-variables.scss)
+// These will be available after importing quasar-variables
+// $primary, $secondary, $accent, $dark, $positive, $negative, $info, $warning
+
+// Unified Color System
+// Use Quasar colors when available, fallback to custom colors
+$color-primary-quasar: $primary !default;
+$color-secondary-quasar: $secondary !default;
+$color-accent-quasar: $accent !default;
+$color-dark-quasar: $dark !default;
+$color-positive-quasar: $positive !default;
+$color-negative-quasar: $negative !default;
+$color-info-quasar: $info !default;
+$color-warning-quasar: $warning !default;
+
+// Additional color variables for components
+$color-negative: #C10015;
+$color-positive: #21BA45;
+$color-info: #31CCEC;
+$color-warning: #F2C037;
+$color-grey-darkest: #222222;
+
+
+// Spacing
+$spacing-xs: 0.6em;
+$spacing-sm: 1.2em;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 2em;
+$spacing-xxl: 3.2em;
+
+// Border radius
+$border-radius: 8px;
+$border-radius-sm: 4px;
+$border-radius-lg: 12px;
+
+// Transitions
+$transition-duration: 0.25s;
+$transition-timing: ease-in-out;
+
+// Breakpoints
+$min-width: 320px;
+$max-width: 1280px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal: 1040;
+$z-index-popover: 1050;
+$z-index-tooltip: 1060;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 

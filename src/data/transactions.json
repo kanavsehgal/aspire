@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "title": "Hamleys",
+    "amount": "+ S$ 150",
+    "type": "refund",
+    "date": "20 May 2020",
+    "icon": "../assets/file-storage.svg",
+    "background": "#009DFF1A"
+
+  },
+  {
+    "id": "2",
+    "title": "Hamleys",
+    "amount":"- S$ 150",
+    "type": "charged",
+    "date": "20 May 2020",
+    "icon": "../assets/flights.svg",
+    "background": "#00D6B51A"
+  },
+  {
+    "id": "3",
+    "title": "Hamleys",
+    "amount": "- S$ 150",
+    "type": "charged",
+    "date": "20 May 2020",
+    "icon": "../assets/megaphone.svg",
+    "background": "#F251951A"
+  },
+  {
+    "id": "4",
+    "title": "Hamleys",
+    "amount": "- S$ 150",
+    "type": "charged",
+    "date": "20 May 2020",
+    "icon": "../assets/file-storage.svg",
+    "background": "#009DFF1A"
+  }
+] 

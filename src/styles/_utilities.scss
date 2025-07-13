@@ -1,0 +1,175 @@
+// =============================================================================
+// SCSS Utilities
+// =============================================================================
+
+// Import variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// Spacing utilities
+.m {
+  &t-0 { margin-top: 0; }
+  &t-1 { margin-top: $spacing-md; }
+  &t-2 { margin-top: $spacing-lg; }
+  &t-3 { margin-top: $spacing-xl; }
+  
+  &b-0 { margin-bottom: 0; }
+  &b-1 { margin-bottom: $spacing-md; }
+  &b-2 { margin-bottom: $spacing-lg; }
+  &b-3 { margin-bottom: $spacing-xl; }
+  
+  &l-0 { margin-left: 0; }
+  &l-1 { margin-left: $spacing-md; }
+  &l-2 { margin-left: $spacing-lg; }
+  &l-3 { margin-left: $spacing-xl; }
+  
+  &r-0 { margin-right: 0; }
+  &r-1 { margin-right: $spacing-md; }
+  &r-2 { margin-right: $spacing-lg; }
+  &r-3 { margin-right: $spacing-xl; }
+  
+  &x-auto { margin-left: auto; margin-right: auto; }
+  &y-auto { margin-top: auto; margin-bottom: auto; }
+}
+
+.p {
+  &t-0 { padding-top: 0; }
+  &t-1 { padding-top: $spacing-md; }
+  &t-2 { padding-top: $spacing-lg; }
+  &t-3 { padding-top: $spacing-xl; }
+  
+  &b-0 { padding-bottom: 0; }
+  &b-1 { padding-bottom: $spacing-md; }
+  &b-2 { padding-bottom: $spacing-lg; }
+  &b-3 { padding-bottom: $spacing-xl; }
+  
+  &l-0 { padding-left: 0; }
+  &l-1 { padding-left: $spacing-md; }
+  &l-2 { padding-left: $spacing-lg; }
+  &l-3 { padding-left: $spacing-xl; }
+  
+  &r-0 { padding-right: 0; }
+  &r-1 { padding-right: $spacing-md; }
+  &r-2 { padding-right: $spacing-lg; }
+  &r-3 { padding-right: $spacing-xl; }
+}
+
+// Typography utilities
+.text {
+  &-center { text-align: center; }
+  &-left { text-align: left; }
+  &-right { text-align: right; }
+  &-justify { text-align: justify; }
+  
+  &-small { @include small-text; }
+  &-body { @include body-text; }
+  &-large { font-size: $font-size-lg; }
+  &-xl { font-size: $font-size-xl; }
+  
+  &-bold { font-weight: $font-weight-bold; }
+  &-medium { font-weight: $font-weight-medium; }
+  &-normal { font-weight: $font-weight-base; }
+  
+  &-truncate { @include text-truncate; }
+  &-uppercase { text-transform: uppercase; }
+  &-lowercase { text-transform: lowercase; }
+  &-capitalize { text-transform: capitalize; }
+}
+
+// Display utilities
+.d {
+  &-block { display: block; }
+  &-inline { display: inline; }
+  &-inline-block { display: inline-block; }
+  &-flex { display: flex; }
+  &-grid { display: grid; }
+  &-none { display: none; }
+}
+
+// Flex utilities
+.flex {
+  &-center { @include flex-center; }
+  &-between { @include flex-between; }
+  &-column { flex-direction: column; }
+  &-row { flex-direction: row; }
+  &-wrap { flex-wrap: wrap; }
+  &-nowrap { flex-wrap: nowrap; }
+  
+  &-1 { flex: 1; }
+  &-auto { flex: auto; }
+  &-none { flex: none; }
+}
+
+// Position utilities
+.position {
+  &-relative { position: relative; }
+  &-absolute { position: absolute; }
+  &-fixed { position: fixed; }
+  &-sticky { position: sticky; }
+  &-static { position: static; }
+}
+
+.absolute-center { @include absolute-center; }
+
+// Width and height utilities
+.w {
+  &-full { width: 100%; }
+  &-auto { width: auto; }
+  &-50 { width: 50%; }
+  &-75 { width: 75%; }
+  &-25 { width: 25%; }
+}
+
+.h {
+  &-full { height: 100%; }
+  &-auto { height: auto; }
+  &-screen { height: 100vh; }
+}
+
+// Border utilities
+.border {
+  &-none { border: none; }
+  &-rounded { border-radius: $border-radius; }
+  &-rounded-sm { border-radius: $border-radius-sm; }
+  &-rounded-lg { border-radius: $border-radius-lg; }
+}
+
+// Shadow utilities
+.shadow {
+  &-none { box-shadow: none; }
+  &-sm { box-shadow: $shadow-sm; }
+  &-md { box-shadow: $shadow-md; }
+  &-lg { box-shadow: $shadow-lg; }
+}
+
+// Animation utilities
+.animate {
+  &-fade-in { @include fade-in; }
+  &-slide-in-up { @include slide-in('Up'); }
+  &-slide-in-down { @include slide-in('Down'); }
+}
+
+// Responsive utilities
+@include mobile {
+  .d-mobile {
+    &-block { display: block; }
+    &-none { display: none; }
+    &-flex { display: flex; }
+  }
+}
+
+@include tablet {
+  .d-tablet {
+    &-block { display: block; }
+    &-none { display: none; }
+    &-flex { display: flex; }
+  }
+}
+
+@include desktop {
+  .d-desktop {
+    &-block { display: block; }
+    &-none { display: none; }
+    &-flex { display: flex; }
+  }
+} 

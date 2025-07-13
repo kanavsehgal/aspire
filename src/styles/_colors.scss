@@ -1,0 +1,102 @@
+// =============================================================================
+// Color Palette
+// =============================================================================
+
+// Primary Colors
+$color-white: #FFFFFF;
+$color-white-pure: #FCFCFC;
+$color-black: #000000;
+
+// Navy Colors
+$color-navy-dark: #0C365A;
+$color-navy-light: #072A441F;
+
+// Blue Colors
+$color-blue-primary: #325BAF;
+$color-blue-light: #EDF3FF;
+$color-blue-very-light: #F5F9FF;
+$color-blue-20: #009DFF1A;
+
+// Green Colors
+$color-green-primary: #01D167;
+$color-green-light: #EDFFF5;
+$color-green-very-light: #DDFFEC;
+
+// Gray Colors
+$color-gray-light: #F5F5F5;
+$color-gray: #F0F0F0;
+$color-gray-medium: #AAAAAA;
+$color-gray-border: #E5E5E5;
+
+// Red Colors (for errors and required fields)
+$color-red-primary: #FF4444;
+$color-red-light: #FFE5E5;
+$color-red-very-light: #FFF5F5;
+
+// Accent Colors
+$color-cyan: #23CEFD;
+$color-teal-20: #00D6B51A;
+$color-pink-20: #F251951A;
+
+// Black with Opacity
+$color-black-2: #00000005;
+$color-black-4: #0000000A;
+$color-black-6: #0000000F;
+$color-black-8: #00000014;
+$color-black-12: #0000001F;
+
+// Color Categories for Semantic Usage
+$colors-primary: (
+  'white': $color-white,
+  'white-pure': $color-white-pure,
+  'navy-dark': $color-navy-dark,
+  'navy-light': $color-navy-light,
+  'blue-primary': $color-blue-primary,
+  'blue-light': $color-blue-light,
+  'blue-very-light': $color-blue-very-light,
+  'green-primary': $color-green-primary,
+  'green-light': $color-green-light,
+  'green-very-light': $color-green-very-light,
+  'red-primary': $color-red-primary,
+  'red-light': $color-red-light,
+  'red-very-light': $color-red-very-light
+);
+
+$colors-neutral: (
+  'gray-light': $color-gray-light,
+  'gray': $color-gray,
+  'gray-medium': $color-gray-medium,
+  'gray-border': $color-gray-border
+);
+
+$colors-accent: (
+  'cyan': $color-cyan,
+  'blue-20': $color-blue-20,
+  'teal-20': $color-teal-20,
+  'pink-20': $color-pink-20
+);
+
+$colors-opacity: (
+  'black-2': $color-black-2,
+  'black-4': $color-black-4,
+  'black-6': $color-black-6,
+  'black-8': $color-black-8,
+  'black-12': $color-black-12
+);
+
+// Semantic Color Variables
+$color-background-primary: $color-white;
+$color-background-secondary: $color-gray-light;
+$color-background-tertiary: $color-blue-very-light;
+
+$color-text-primary: $color-navy-dark;
+$color-text-secondary: $color-gray-medium;
+$color-text-muted: $color-black-12;
+
+$color-border-primary: $color-gray-border;
+$color-border-secondary: $color-blue-light;
+
+$color-success: $color-green-primary;
+$color-info: $color-blue-primary;
+$color-warning: $color-cyan;
+$color-error: $color-pink-20; 

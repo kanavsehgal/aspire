@@ -1,0 +1,82 @@
+{
+  "dashboard": {
+    "sidebar": {
+      "tagline": "Trusted way of banking for 3,000+ SMEs and startups in Singapore",
+      "nav": {
+        "home": "Home",
+        "cards": "Cards",
+        "payments": "Payments",
+        "credit": "Credit",
+        "settings": "Settings"
+      }
+    },
+    "balanceLabel": "Available balance",
+    "newCardButton": "New card",
+    "loading": "Loading your dashboard...",
+    "tabs": {
+      "myDebitCards": "My debit cards",
+      "companyCards": "All company cards"
+    },
+    "showCardNumberButton": "Show card number",
+    "cardActions": {
+      "freeze": "Freeze card",
+      "unfreeze": "Unfreeze card",
+      "frozen": "Card frozen",
+      "setSpendLimit": "Set spend limit",
+      "addToGooglePay": "Add to GPay",
+      "replaceCard": "Replace card",
+      "cancelCard": "Cancel card"
+    },
+    "cardDetailsTitle": "Card details",
+    "recentTransactionsTitle": "Recent transactions",
+    "viewAllTransactionsButton": "View all card transactions",
+    "newCardModalTitle": "Add new card",
+    "newCardModalHolderLabel": "Card holder name",
+    "newCardModalHolderError": "Card holder name is required",
+    "newCardModalHolderMinLengthError": "Card holder name must be at least 2 characters",
+    "newCardModalHolderFormatError": "Card holder name can only contain letters and spaces",
+    "newCardModalCardNumberLabel": "Card number",
+    "newCardModalCardNumberError": "Card number is required",
+    "newCardModalCardNumberLengthError": "Card number must be exactly 16 digits",
+    "newCardModalCardNumberFormatError": "Card number can only contain numbers",
+    "newCardModalValidThruLabel": "Valid thru (MM/YY)",
+    "newCardModalValidThruError": "Valid thru date is required",
+    "newCardModalValidThruFormatError": "Date must be in MM/YY format",
+    "newCardModalValidThruMonthError": "Month must be between 01 and 12",
+    "newCardModalValidThruYearError": "Year must be current year or later",
+    "newCardModalCvvLabel": "CVV",
+    "newCardModalCvvError": "CVV is required",
+    "newCardModalCvvLengthError": "CVV must be exactly 3 digits",
+    "newCardModalCvvFormatError": "CVV can only contain numbers",
+    "newCardModalCardProviderLabel": "Card provider",
+    "newCardModalCardProviderError": "Card provider is required",
+    "newCardModalBankLabel": "Bank",
+    "newCardModalBankError": "Bank is required",
+    "newCardModalBankMinLengthError": "Bank name must be at least 2 characters",
+    "newCardModalBankFormatError": "Bank name can only contain letters and spaces",
+    "newCardModalCancelButton": "Cancel",
+    "newCardModalAddButton": "Add card",
+    "newCardSuccessMessage": "Card added successfully!",
+    "transactionNotes": {
+      "refund": "Refund on debit card",
+      "charged": "Charged to debit card"
+    },
+    "cardVisual": {
+      "expiryLabel": "Thru",
+      "cvvLabel": "CVV",
+      "typeVisa": "VISA",
+      "typeMastercard": "Mastercard"
+    },
+    "cardDetails": {
+      "cardNumber": "Card number",
+      "cardHolder": "Card holder",
+      "expiryDate": "Expiry date",
+      "cvv": "CVV",
+      "cardType": "Card type",
+      "status": "Status",
+      "year": "Year",
+      "frozen": "Frozen",
+      "active": "Active"
+    }
+  }
+} 
