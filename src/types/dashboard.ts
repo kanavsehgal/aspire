@@ -38,13 +38,15 @@ export interface CardAction {
 }
 
 export interface Transaction {
+  id: string
   title: string
   date: string
-  amount: number
+  amount: string
   icon: string
-  iconColor: string
-  noteKey: string
-  type?: TransactionType
+  background: string
+  type: TransactionType
+  iconColor?: string
+  noteKey?: string
 }
 
 export interface NewCardForm {

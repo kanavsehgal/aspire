@@ -1,5 +1,6 @@
 import type { CardDetail, Transaction } from '../types/dashboard'
 import { CardType } from '../types/dashboard'
+import { TransactionType } from '../types/dashboard'
 
 // Import JSON data
 import debitCardsData from '../data/debitCards.json'
@@ -39,8 +40,11 @@ class CardsPageService {
     // Simulate API call delay
     await new Promise((resolve) => setTimeout(resolve, 300))
 
-    // Read from JSON file
-    return transactionsData as Transaction[]
+    // Read from JSON file and map to proper types
+    return transactionsData.map((transaction: any) => ({
+      ...transaction,
+      type: transaction.type === 'refund' ? TransactionType.REFUND : TransactionType.CHARGED,
+    })) as Transaction[]
   }
 
   /**
